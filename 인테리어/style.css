@@ -1,0 +1,346 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul
+{list-style: none;}
+
+li, a, span
+{
+    text-decoration: none;
+}
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 네비게이션 left */
+.container
+{
+    position: relative;
+    width: 100%;
+}
+.navigation
+{
+    position: fixed;
+    width: 300px;
+    height: 84vh;
+    background-color: #F5F5F5;
+    transition: .5s;
+    overflow: hidden;
+    border-radius: 0 24px 24px 0;
+}
+.navigation ul
+{
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li
+{
+    position: relative;
+    left: 40px;
+    padding: 18px;
+    margin-bottom: 20px;
+    width: 86%;
+    transition: .2s;
+}
+
+.navigation ul li:hover,
+.navigation ul li.hovered
+{
+    width: 86%;
+    background-color: white;
+    border-right: 4px solid #2019E6;  
+}
+.navigation ul li a:hover span,
+.navigation ul li a.hovered span
+{
+    color: #2019E6;
+}
+.navigation ul li a span
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: #999999;
+    padding: 6px;
+}
+
+/* 헤더 시작 */
+header
+{
+    width: 100vw;
+    height: 86px;
+}
+
+.inner
+{
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+}
+
+h1.logo{
+    position: relative;
+    left: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2019E6;
+}
+
+.user img
+{
+    position: relative;
+    right: 80px;
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input
+{
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 26px;
+    width: 1300px;
+    height: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+/* main contents */
+.sec02{
+    position: relative;
+    top: 60px;
+    left: 150px;
+    margin: auto;
+    width: 80%;
+    height: 530px;
+}
+
+#top-area
+{
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+}
+
+.set-left-hot
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+}
+
+.set-left-hot h1 p
+{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.userbox{
+    position: relative;
+    top: 62px;
+    left: 0;
+    width: 354px;
+    height: 72px;
+    background-color: #2019E6;
+    border-radius: 36px;
+}
+
+.userbox img, .userbox h3
+{
+    position: absolute;
+}
+
+.userbox img
+{
+    border-radius: 50%;
+}
+.userbox h3
+{
+    left: 82px;
+}
+.userbox h3 a
+{
+    line-height: 60px;
+    left: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.uswereview > p
+{
+    position: relative;
+    top: 90px;
+    line-height: 28px;
+}
+
+.set-right-frist
+{
+    float: right;
+    width: 55%;
+    height: 100%;
+}
+
+.set-right-frist ul li img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.review-more 
+{
+    position: relative;
+    top: 140px;
+    left: 0;
+}
+.more-title
+{
+    position: relative;
+    top: 40px;
+}
+.review-more-headline
+{
+    position: relative;
+    top: 70px;
+}
+.review-more-headline li
+{
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 17px;
+}
+
+.control
+{
+    position: relative;
+}
+
+.control .prev,
+.control .next
+{
+    position: absolute;
+    top: 0;
+    z-index: 98;
+}
+
+.control .prev
+{
+    right: 300px;
+}
+
+/* sect03 */
+.sect03
+{
+    position: relative;
+    bottom: -166px;
+    left: 228px;
+    margin: auto;
+    width: 90%;
+    height: 430px;
+}
+
+.sect03-title > p
+{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    display: inline-block; 
+}
+.item-container{width: 100%; height: 100%;}
+
+.item-inner-container
+{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 90%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 280fr 20fr 280fr 20fr 280fr 20fr 280fr 20fr 280fr;
+    grid-template-rows: 346fr 57fr;
+}
+
+.small
+{
+    width: 100%;
+}
+.small .icon
+{
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.item01
+{
+    grid-column: 1 / span 1;
+    grid-row: 1/ span 1;
+    background: url("img/bgb.png")no-repeat left / contain;
+}
+
+.item02
+{
+    grid-column: 3 / span 1;
+    grid-row: 1/ span 1;
+    background: url("img/pngwing.com\ \(8\).png")no-repeat left / contain;
+}
+
+.item03
+{
+    grid-column: 5 / span 1;
+    grid-row: 1/ span 1;
+    background: url("img/pngwing.com\ \(1\).png")no-repeat left / contain;
+}
+
+.item04
+{
+    grid-column: 7 / span 1;
+    grid-row: 1/ span 1;
+    background: url("img/nh.png")no-repeat left / contain;
+}
+
+.item05
+{
+    grid-column: 9 / span 1;
+    grid-row: 1/ span 1;
+    background: url("img/pngwing.com\ \(2\).png")no-repeat left / contain;
+}
+
+#text-price-item
+{
+    display: inline-block;
+    width: 270px;
+    overflow: hidden;
+    position: relative;
+    top: 100%;
+    left: 0;
+}
+
+#text-price-item > h4
+{
+    font-size: 20px;
+    color: #2019E6;
+}
+#text-price-item > p.item-name
+{
+    line-height: 28px;
+}
